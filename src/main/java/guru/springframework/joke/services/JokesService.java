@@ -1,11 +1,12 @@
 package guru.springframework.joke.services;
 
+import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 import org.springframework.stereotype.Service;
 
 @Service
 public class JokesService {
     public String getJoke() {
-        // Do something
-        return "blah";
+        var x = new ChuckNorrisQuotes();
+        return x.getRandomQuote();
     }
 }
